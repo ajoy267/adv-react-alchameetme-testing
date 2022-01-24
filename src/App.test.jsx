@@ -1,7 +1,7 @@
 import { findByText, getByAltText, getByText, render, screen } from '@testing-library/react'
 import App from './App'
 
-test.only('Should render the header', async () => {
+test('Should render the header', async () => {
   render(<App />)
 
   const logo = screen.getByAltText(/alchemy logo/i)
