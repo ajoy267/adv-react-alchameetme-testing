@@ -12,7 +12,7 @@ const user = {
   color: 'crimson',
 }
 
-test.only('Should render the user profile', async () => {
+test('Should render the user profile', async () => {
   render(<Home user={user} />)
 
   const name = await screen.findByText(/vonta/i)
